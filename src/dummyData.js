@@ -50,6 +50,21 @@ export const userData = [
       "Active User": 3490,
     },
   ];
+export const productData = [
+    {
+      name: 'Jan',
+      "Sales": 3000,
+    },
+    {
+      name: 'Feb',
+      "Sales": 2000,
+    },
+    {
+      name: 'Mar',
+      "Sales": 3000,
+    },
+    
+  ];
 
   export const userRows = [
     { id: 1, username: ' Jon Snow', 
