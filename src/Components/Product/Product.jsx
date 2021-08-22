@@ -11,7 +11,7 @@ function Product() {
         <div className="product">
             <div className="userTitleContainer">
                 <h1 className="userTitle">Product</h1>
-                <Link to="/newUser">
+                <Link to="/newProduct">
                 <button className="userAddButton">Create</button>
                 </Link>
             </div>
