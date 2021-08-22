@@ -1,6 +1,8 @@
 import { AttachMoney, BarChart, ChatBubbleOutline, DynamicFeed, LineStyle, MailOutline, PermIdentity, Report, Storefront, Timeline, TrendingUp, WorkOutline } from '@material-ui/icons';
 import React from 'react';
 import './Sidebar.css';
+import { Link } from 'react-router-dom'
+
 
 function Sidebar() {
     return (
@@ -30,14 +32,18 @@ function Sidebar() {
                         Quick Menu
                     </h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItems active">
-                         <PermIdentity className="sidebarIcon"/>
-                         Users   
-                        </li>
-                        <li className="sidebarListItems">
-                         <Storefront className="sidebarIcon"/>
-                         Products   
-                        </li>
+                        <Link to="users">
+                            <li className="sidebarListItems ">
+                            <PermIdentity className="sidebarIcon"/>
+                            Users   
+                            </li>
+                        </Link>
+                        <Link to="products">
+                            <li className="sidebarListItems">
+                            <Storefront className="sidebarIcon"/>
+                            Products   
+                            </li>
+                        </Link>
                         <li className="sidebarListItems">
                          <AttachMoney className="sidebarIcon"/>
                          Transactions   
